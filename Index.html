@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <header class="topheader">
+        <div class="container">
+          <div class="icon_topheader"><a href="#">TRAVEL</a></div>
+          <ul class="topnav">
+            <li class="liheader"><a href="#home">Trang chủ</a></li>
+            <li class="liheader"><a href="#news">Tin tức</a></li>
+            <li class="liheader"><a href="#about">Liên hệ</a></li>
+            <li class="liheader">
+              <a href="#about"><b>Đăng ký</b></a>
+            </li>
+            <li class="liheader">
+              <a href="#about"><b>Đăng nhập</b></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="intro">
+      <div class="intro-video">
+        <video playsinline autoplay muted loop
+          href=".desktop/video/XIN CHÀO VIỆT NAM - DU LỊCH XUYÊN VIỆT - PHIÊN BẢN FLYCAM - HELLO VIET NAM.mp4"></video>
+        <div class="intro-text">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            beatae quod iste provident doloremque at. Nobis reiciendis
+            reprehenderit obcaecati, ipsam iure ipsa modi ex harum minima ab
+            ducimus eaque sed.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="trending-container">
+      <h2 class="category-title">Địa điểm được yêu thích</h2>
+      <div class="slideshow">
+        
+        <div class="slide-container">
+          <div class="slide-img">
+            <img src="https://statics.vinpearl.com/thoi-tiet-sai-gon-01_1633669472.jpg">
+  
+          </div>
+          <div class="slide-img">
+            <img src="https://kenh14cdn.com/thumb_w/660/2019/4/15/troi-saigon1-ty-nguyen-15553141966941781662368.jpg">
+          </div>
+          <div class="slide-img">
+            <img src="https://vansudia.net/wp-content/uploads/2020/10/Untitled-1-min-11.jpg">
+          </div>
+        </div>
+        <div class="slide-dot">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </div>
+      <div class="image-grid">
+        <div class="column">
+          <img src="https://saigonstartravel.com/wp-content/uploads/2021/02/du-lich-da-lat.jpg " alt="" />
+        </div>
+        <div class="column">
+          <img
+            src="https://cafefcdn.com/thumb_w/650/203337114487263232/2022/4/3/photo1648997595979-1648997596100218404348.jpg"
+            alt="" />
+        </div>
+        <div class="column">
+          <img src="https://dulichhoangnam.vn/pic/Tour/cea924447_636977913340850233_HasThumb_Thumb.jpg.ashx" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="destination-list">
+      <ul class="img-list">
+            <li><img class="img" src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg"></li>
+            <li><img class="img" src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg"></li>
+            <li><img class="img" src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg"></li>
+            <li><img class="img" src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg"></li>
+            <li><img class="img" src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg"></li>
+            <li><img class="img" src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg"></li>
+            <li><img class="img" src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg"></li>
+            <li><img class="img" src="https://vietradeportal.vn/trung-tam-thanh-pho-ha-noi-o-dau/imager_11239.jpg"></li>
+          </ul>
+          <div id="modal" class="modalShow">
+             <span class="close">&times;</span>
+             <img id="imgShow" class="img-content">
+          </div>
+    </div>
+    <!-- TaskShort -->
+    <div id="myBtn">
+      <button class="btna active1" onclick="filterSection('all')">Xem tất cả</button>
+      <button class="btna" onclick="filterSection('nui')">Xem tất cả</button>
+      <button class="btna" onclick="filterSection('rung')">Xem tất cả</button>
+      <button class="btna" onclick="filterSection('bien')">Xem tất cả</button>
+    </div>
+    <!-- Showfilter -->
+    <div class="row-img">
+      <div class="column moutain">
+        <div class="content">
+          <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="moutain">
+          <h4>moutain</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+        </div>
+      </div>
+      <div class="column moutain">
+        <div class="content">
+          <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="moutain">
+          <h4>moutain</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+        </div>
+      </div>
+      <div class="column moutain">
+        <div class="content">
+          <img src="" alt="moutain">
+          <h4>moutain</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+        </div>
+
+        <div class="column forest">
+          <div class="content">
+            <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="forest">
+            <h4>forest</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+          </div>
+        </div>
+        <div class="column forest">
+          <div class="content">
+            <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="forest">
+            <h4>forest</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+          </div>
+        </div>
+        <div class="column forest">
+          <div class="forest">
+            <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="forest">
+            <h4>forest</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+          </div>
+        </div>
+
+        <div class="column sea">
+          <div class="content">
+            <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="sea">
+            <h4>sea</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+          </div>
+        </div>
+        <div class="column sea">
+          <div class="content">
+            <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="sea">
+            <h4>sea</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+          </div>
+        </div>
+        <div class="column sea">
+          <div class="content">
+            <img src="https://bazantravel.com/cdn/medias/uploads/85/85482-review-da-lat-golf-cafe-hoang-hon.jpg" alt="sea">
+            <h4>sea</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <footer>
+    <div class="info_registration">
+      <h1>Đăng ký nhận tin</h1>
+      <p class="">Tổng hợp những địa điểm du lịch mới nhất</p>
+      <div>
+        <input class="email_input" placeholder="Email nhận tin" />
+        <button class="btn_registration">Đăng Ký</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="contact_footer">
+        <h3>LIÊN HỆ</h3>
+        <ul>
+          <li>
+            <b>Địa chỉ:</b> Ladeco Building, 266 Doi Can Street, Ba Dinh
+            District, Ha Noi
+          </li>
+          <br />
+          <li><b>Điện thoại:</b> 19006750</li>
+          <br />
+          <li><b>Emai:</b> support@sapo.vn</li>
+          <br />
+          <li><b>Giờ làm việc:</b> Đang cập nhật</li>
+        </ul>
+      </div>
+      <div class="payment_footer">
+        <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+        <ul class="connect">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-google"></a></li>
+        </ul>
+        <!-- <h3>CHẤP NHẬN THANH TOÁN</h3>
+        <ul>
+          <li>ICON NGÂN HÀNG</li>
+        </ul> -->
+      </div>
+      <div class="list_footer">
+        <h3>TRONG NƯỚC</h3>
+        <ul>
+          <li>Hạ Long</li>
+          <li>Ninh Bình</li>
+          <li>Nghệ An</li>
+          <li>Đà Nẵng</li>
+          <li>Tam Đảo</li>
+          <li>Quảng Ninh</li>
+          <li>Thanh Hóa</li>
+        </ul>
+      </div>
+      <!-- <div class="list_footer_oversea">
+        <h3>NGOÀI NƯỚC</h3>
+        <ul>
+          <li>ádsad</li>
+          <li>ádsad</li>
+          <li>ádsad</li>
+          <li>sadsad</li>
+          <li>áđâsd</li>
+          <li>cxzcxzc</li>
+          <li>ádsad</li>
+          <li>áđâs</li>
+        </ul>
+      </div> -->
+      <div class="list_footer_info">
+        <h3>THÔNG TIN</h3>
+        <ul>
+          <li>Tin tức</li>
+          <li>Tạp chí du lịch</li>
+          <li>Cẩm nang du lịch</li>
+          <li>Kinh nghiệm du lịc</li>
+          <li>Liên hệ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© Bản quyền thuộc về Group 4</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
